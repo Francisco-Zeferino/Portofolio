@@ -1,17 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+
+/* animations */
+@keyframes nav-links__fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.nav-links__fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+}
+
+/* animations end*/
+
 * {
     box-sizing : border-box;
     margin : 0;
     padding : 0;
-    background-color: #24252A;
+    background-color: #0a192f;
 }
 
 li, a, button {
     font-family : "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color : #edf0f1;
+    color: #e7ecef;
     text-decoration: none;
 }
 
@@ -24,7 +44,8 @@ header {
 
 section{
     animation: fadeInLeft;
-    animation-duration: 2s;
+    animation-duration: 2s; 
+    
 }
 
 .logo{
@@ -33,33 +54,39 @@ section{
     cursor: pointer;
 }
 
-.nav__links {
+.logo-video{
+    width: 200px;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.nav-links__fadeInDown {
     list-style: none;
 }
 
-.nav__links li {
+.nav-links__fadeInDown li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav__links :nth-child(1){
+.nav-links__fadeInDown :nth-child(1){
     animation: fadeInDown;
     animation-duration: 1s;
 }
-.nav__links :nth-child(2){
+.nav-links__fadeInDown :nth-child(2){
     animation: fadeInDown;
     animation-duration: 2s;
 }
-.nav__links :nth-child(3){
+.nav-links__fadeInDown :nth-child(3){
     animation: fadeInDown;
     animation-duration: 3s;
 }
 
-.nav__links li a{
+.nav-links__fadeInDown li a{
     transition: all 0.3s ease 0s;
 }
 
-.nav__links li a:hover{
+.nav-links__fadeInDown li a:hover{
     color : #7289da;
 }
 
@@ -86,6 +113,14 @@ button:hover{
     max-width: 1000px;
     flex-direction: column;
 }
+
+#intro-school{
+    margin-left: 25%;
+    margin-top: 25%;
+    max-width: 1000px;
+    flex-direction: column;
+}
+
 .begin-name{
     font-family : "Montserrat", sans-serif;
     font-weight: 500;
@@ -112,12 +147,9 @@ button:hover{
 
 .about-me-intro{
     font-family : "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    color : #b4bdc2;
-    text-decoration: none;
     margin-top: 2%;
     line-height: 1.6;
+    color: #e7ecef;
 }
 
 .check-out-progress-button{
@@ -129,4 +161,13 @@ button:hover{
     position: relative;
     margin-top: 3%;
     transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
+
+.school-name{
+    font-family : "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    color : #edf0f1;
+    text-decoration: none;  
+    margin-top: 5%;
 }
