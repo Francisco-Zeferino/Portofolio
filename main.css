@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing : border-box;
+    margin : 0;
+    padding : 0;
+    background-color: #24252A;
+}
+
+li, a, button {
+    font-family : "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color : #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display : flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding : 30px 10%;
+}
+
+section{
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+.logo{
+    width: 90px;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links :nth-child(1){
+    animation: fadeInDown;
+    animation-duration: 1s;
+}
+.nav__links :nth-child(2){
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+.nav__links :nth-child(3){
+    animation: fadeInDown;
+    animation-duration: 3s;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color : #7289da;
+}
+
+.cta{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #7289da;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
+
+button:hover{
+     transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.intro{
+    margin-left: 25%;
+    margin-top: 5%;
+    max-width: 1000px;
+    flex-direction: column;
+}
+.begin-name{
+    font-family : "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color : #edf0f1;
+    text-decoration: none;
+}
+
+.name{
+    font-family : "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    color : #edf0f1;
+    text-decoration: none;  
+}
+
+.ocupation{
+    font-family : "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    color : #b4bdc2;
+    text-decoration: none;
+}
+
+.about-me-intro{
+    font-family : "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color : #b4bdc2;
+    text-decoration: none;
+    margin-top: 2%;
+    line-height: 1.6;
+}
+
+.check-out-progress-button{
+    padding: 9px 25px;
+    background-color: #7289da;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 3%;
+    transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
